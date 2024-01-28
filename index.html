@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -10,6 +11,7 @@
   <title>Treine me</title>
 </head>
 <body>
+  <div id="totalBlur" class="not_blur">
   <div class="page">
     <nav>
       <a href="#">
@@ -17,36 +19,42 @@
       </a>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Treinar</a></li>
+        <li><a href="#" onclick="seeAbout()">Sobre</a></li>
+        <li><a href="#whatsapp" onclick="borderButtonByAbout()">Treinar</a></li>
       </ul>
     </nav>
     <main>
-
       <section class="text">
-
-        <h1>Treinos <span>exclusivos</span>
-           para você</h1>
-        <p>
-          Nós criamos treinos <strong>exclusivos e únicos para você.</strong> <br>
-        Invista no seu corpo e <strong>tenha muito mais performance</strong> e qualidade de vida.
-        </p>
-        <button>
-          <img src="./images/whatsapp 1.svg" alt="Ícone do whatsapp"> Comece já!
-        </button>
-      </section>
-      <img src="./images/fitness-jump.png" alt="Ícone de uma mulher pulando corda em uma academia">
-
-
+          <h1>Treinos <span>exclusivos</span>
+            para você</h1>
+          <p>
+            Nós criamos treinos <strong>exclusivos e únicos para você.</strong> <br>
+          Invista no seu corpo e <strong>tenha muito mais performance</strong> e qualidade de vida.
+          </p>
+          <button id="whatsapp">
+            <img src="./images/whatsapp 1.svg" alt="Ícone do whatsapp"> Comece já!
+          </button>
+        </section>
+        <img src="./images/fitness-jump.png" alt="Ícone de uma mulher pulando corda em uma academia">
     </main>
-    <footer>
+  <footer>
+    fale concosco no instagram <a target="_blank" href="https://instagram.com/treine-me">@treine.me</a>
+  </footer>
 
-      fale concosco no instagram <a target="_blank" href="https://instagram.com/treine-me">@treine.me</a>
-
-    </footer>
-
+  </div>
     <img id="balls" src="./images/balls.svg" alt="Bolinhas verdes no canto inferior direito da página.">
-
+</div>
+  <div id="upfor">
+    <div id="about" class="hidden_about">
+      <img src="./images/close.svg" id="closeAbout" onclick="hiddenAbout()" alt="Fechar o menu: Sobre nós">
+        <h2>Sobre-nós</h2>
+          <p>
+              Blá, Blá, Blá
+          </p><br>
+          <p>
+            Nossas redes sociais.
+          </p> <a href="#instagram"> Insta</a>
+    </div>
   </div>
 </body>
 </html>
